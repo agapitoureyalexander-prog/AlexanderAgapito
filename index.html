@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa Cruz de la Sierra | Tierra Camba</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo">
+                <span class="flag-icon" aria-hidden="true">
+                    <span class="stripe green"></span>
+                    <span class="stripe white"></span>
+                    <span class="stripe green"></span>
+                </span>
+                Santa Cruz
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                &#9776;
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#historia" class="nav-link">Reseña Histórica</a></li>
+                    <li><a href="#gastronomia" class="nav-link">Comidas Típicas</a></li>
+                    <li><a href="#curiosidades" class="nav-link">Curiosidades</a></li>
+                    <li><a href="#contacto" class="nav-link">Autor</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero / Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="badge">Corazón de Sudamérica</span>
+            <h1>Santa Cruz de la Sierra</h1>
+            <p>Hospitalidad, progreso, tradición y naturaleza en la tierra del Tajibo en flor.</p>
+            <div class="hero-buttons">
+                <a href="#historia" class="btn btn-primary">Conocer Historia</a>
+                <a href="#curiosidades" class="btn btn-outline">Ver Curiosidades</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Reseña Histórica -->
+    <section id="historia" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Reseña Histórica</h2>
+                <div class="divider"></div>
+                <p>Un recorrido por los orígenes y la evolución de la capital oriental de Bolivia.</p>
+            </div>
+
+            <div class="history-grid">
+                <div class="history-text">
+                    <h3>Fundación y Traslados</h3>
+                    <p>
+                        <strong>Santa Cruz de la Sierra</strong> fue fundada el <strong>26 de febrero de 1561</strong> por el capitán español <strong>Ñuflo de Chaves</strong>, a orillas del arroyo Sutó, en las serranías de Chiquitos (cerca de lo que hoy es San José de Chiquitos). Le dio ese nombre en honor a su tierra natal en Extremadura, España.
+                    </p>
+                    <p>
+                        Debido a los constantes conflictos con los pueblos originarios de la zona y el aislamiento geográfico, la ciudad tuvo que ser trasladada en varias ocasiones hasta asentarse definitivamente a orillas del río Piraí en <strong>1592</strong>, fusionándose con la población de San Lorenzo Real de la Frontera.
+                    </p>
+                    <p>
+                        El <strong>24 de septiembre de 1810</strong>, los patriotas cruceños encabezados por Ignacio Warnes, José Manuel Mercado y Antonio Vicente Seoane dieron el primer grito libertario en el oriente boliviano, marcando un hito fundamental en la independencia de Bolivia. Hoy es el motor económico y la ciudad más poblada del país.
+                    </p>
+
+                    <div class="timeline-cards">
+                        <div class="t-card">
+                            <span class="year">1561</span>
+                            <span class="event">Fundación por Ñuflo de Chaves</span>
+                        </div>
+                        <div class="t-card">
+                            <span class="year">1592</span>
+                            <span class="event">Asentamiento junto al río Piraí</span>
+                        </div>
+                        <div class="t-card">
+                            <span class="year">1810</span>
+                            <span class="event">Grito Libertario del 24 de Septiembre</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="history-image">
+                    <img src="https://th.bing.com/th/id/R.1b3e883ab99382f16792451586ac477b?rik=5WMhAwimPiv7yQ&pid=ImgRaw&r=0" 
+                         alt="Catedral Metropolitana Basílica de San Lorenzo en la Plaza 24 de Septiembre"
+                         onerror="this.src='https://placehold.co/600x450/007A33/FFFFFF?text=Plaza+24+de+Septiembre+-+Santa+Cruz'">
+                    <p class="img-caption">Catedral Metropolitana Basílica de San Lorenzo, Plaza 24 de Septiembre.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Comidas Típicas -->
+    <section id="gastronomia" class="section section-tinted">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comidas Típicas</h2>
+                <div class="divider"></div>
+                <p>Sabores tradicionales que representan la identidad y calidez del pueblo cruceño.</p>
+            </div>
+
+            <div class="food-grid">
+                <!-- Plato 1 -->
+                <article class="food-card">
+                    <div class="food-img-wrapper">
+                        <img src="https://th.bing.com/th/id/OIP.IDN36JeaemUooOJIkiNtXgHaEA?w=305&h=180&c=7&r=0&o=7&pid=1.7&rm=3" 
+                             alt="Majadito Cruceño"
+                             onerror="this.src='https://placehold.co/600x400/007A33/FFFFFF?text=Majadito+Cruce%C3%B1o'">
+                        <span class="food-tag">Plato Emblemático</span>
+                    </div>
+                    <div class="food-body">
+                        <h3>Majadito</h3>
+                        <p>Preparado a base de arroz tostado y cocido con charque (carne deshidratada de res), urucú (achiote) que le da su característico color rojizo, servido con huevo frito, plátano maduro frito y yuca.</p>
+                    </div>
+                </article>
+
+                <!-- Plato 2 -->
+                <article class="food-card">
+                    <div class="food-img-wrapper">
+                        <img src="https://tse1.explicit.bing.net/th/id/OIP.gHWfHuHlfi2K49eAiiSUggHaGd?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                             alt="Locro Carretero"
+                             onerror="this.src='https://placehold.co/600x400/007A33/FFFFFF?text=Locro+Carretero'">
+                        <span class="food-tag">Tradición</span>
+                    </div>
+                    <div class="food-body">
+                        <h3>Locro Carretero</h3>
+                        <p>Sopa espesa y reconfortante elaborada con arroz, charque o gallina criolla, cebolla, papa y urucú. Nació como el alimento energético de los antiguos carreteros que viajaban por los llanos.</p>
+                    </div>
+                </article>
+
+                <!-- Plato 3 -->
+                <article class="food-card">
+                    <div class="food-img-wrapper">
+                        <img src="https://th.bing.com/th/id/OIP.GnD7LpVZWBXuODkiOVgNIgHaEI?w=309&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                             alt="Sonso de Yuca"
+                             onerror="this.src='https://placehold.co/600x400/007A33/FFFFFF?text=Sonso+de+Yuca'">
+                        <span class="food-tag">Horneado</span>
+                    </div>
+                    <div class="food-body">
+                        <h3>Sonso de Yuca</h3>
+                        <p>Masa suave hecha de yuca cocida y molida mezclada con abundante queso chaqueño, mantequilla y un toque de sal, asada a la brasa en palo o al horno. Ideal para acompañar el café de la tarde.</p>
+                    </div>
+                </article>
+
+                <!-- Plato 4 -->
+                <article class="food-card">
+                    <div class="food-img-wrapper">
+                        <img src="data:image/webp;base64,UklGRj4XAABXRUJQVlA4IDIXAABwcgCdASo6AZgAPpU+mUglo6KhMfZsoLASiUAZqM3bY9Ms7PrL1IIABx+797H0o7j/nZHKZ80Madd3frtV/s3bR7U8I/GJ8/4lfyuvpnifB7+0b8z0klkfQ6iXWHh8/dmpnUpRrAVNYP8WYF2AB3ZBnZP0MP7GeKiJl1EgZbOUIOwzR2bNyaomcAY7n31bDn4HnahrHXpH44qbnWu7Q5+p4rWNLcN4zPP1odcKjS+vkUWFRz3e0NpGSdGKU1zb2g5/gjDj5dt1uf+4gOMG+Zws1g9HHfkw+wXubdyJL9n+NsuZW/X8LYi44nbdtRpMkDMvXAGaMNS3Ca9hFDc9ao9f//MdBrJmDK988nOezQ0kMzxwTl/7m34zEobD5/xrBvFBI+vHTj9BqklEFK7vo7g6WvMwmqpcQhOrdVdT5oMu38JrNZzTA2CsPPDnAeKSTGDyiGDERzCh4guGzTRnrHrF9yW+wmg8eiE63G/7uYu4pb+86oExpAZ41e543BGJCe42xDhfYvfaO+22SAyrnVO43SH+OAfIkPpR48B9pBLHcPvQr3KW31EEMOxw+bAHv2PDZXhG+8fEFvd8DauWMu17jtBTjlXk08CBAdlBz5cPABrUGH+XURRyuy1DRC92F25q+0f0MwKQfKnLZGT2fmPYhH96YX8G1osr0VtQq0Wmcimwkpii2+o4N8ZUaeL/F6Kqstv8X835W9ZAW4gU+mRTa9RsG68YIcDuC+5OaYl2LNZxRH5bG+CD5H3XgpetkIagWiSDSVn+zVR704e6Z767qnfWbLsnbwcBEhUoLOkHVrVuwHZNaqO4WMrs1X9bYHSCWmrB8iqrU8AtEfJl0ajeHkcLfPPuL0czQ8ASQaeBK00aBW4fmRTLmP03cBzjZ87uSm3fDEW2TVUoB69OsvYzcxaI9ZyLEnGZowpfM5dl9/Y4cL6EgYID4kJhB5tLElHS4100+QMNszwgyU/EJlneT47tiEY098ht4jSrrL3r9jaTbnvxC1+wXJNYvtGND5OP1pkF41Eat5srea1jDnfmTV/c/ftxczJ+AbJ0qYB+erVSNyazVGLQ5zgI1i0BAnVVq9RuEGRCuQ5PqDnFqL4//iINgm5Wf/vcl+xSpH9QeQ6xlvD/f33rWi2EF/Ra6JXc9cZvbJaHldhI4uJIIuXo9YB1qADoMmMgarDxT0gj3wIeWv4yCH7A5bHFZ36dP5vvNWSMiJ1iMuP0I0AA/vv2AAASlSSfA2hrpSsqbvzIKVfKWkz97nGIPBeCvzGSm5CjPYqSfrgSJaYZs6ANA3/9BvmIZWzIaDzOqCi/p3lAgGF05z/EZRCpz2/fPHPzyL8ggizKm0SdUOE2hK8W5jFqHDmlXmVpRuwnS8CjLaBI/aXbBDbjdWpn0ahi3vxhcFKwCrvEmMOqcsuDpe2p4veC41pKcsSVEPFtI6JH+t1/K8CJfX0P0N0o1J2TvCwZJ8S8Vd9WyapahspBRwgMQqw225dtStO/VINCFcJQp01y5fhX2FhqjUab9nlSu/TqPKJc/7lRi8SIWIUxemdbFfGcDuSDYScT2Bg+UMEt+aDeBJcJsQAAAAdkMr280u+MpbCQVaPNI1b5Onpy+Nw5TpGtnjvkxVUqD7TXXPjMTGk0gpcbXq2tXCLBh+RoAU2RqQQKCm5RPv9/XV0gZ4n23ftMUfS9eJXrop+5/f4f0TbNVCAKUZCj4GIlaaSOLMKKeF1NOrb1MjwLGlrrIWG2V58qbijBg4SMmNlpPex9P7lPH4J+2VAkK3WqYyzFd3WNIsKIkEid25wxWEfOo0u4iurUNW4XHq0xpRW/Qk/+PCbvTAobtnDd8OsHcHyY6oxnxxie7PLZfnLU+g94vxKpRXk9Rf8kgxsolJZAqzxwpLefYw13vvtRHeVBcvWm0wIuHuodL6H4JL10aoUFJiZ6iCZspldwjQmUITp1XO5K9d1XVQHb7ylyhZVxrTImryEBbm3GjThV4mpU+c/y3nkWS2sUWA/I5GO1m1DYkznib0NJtpbR9cfuW4hUFIY8ojSqfR9+wLDLX6fBwQ6Gwi0H4LoGwAAABVoSU69ObwYi1kKhx60Hp+Hapt1mbShwrc8/LJ8upDU85Q9+Fj89jW5KYxFdEFSpEaQQU7+t8fbQoOFEAN5g9DZ28B4Wlr98wk38Yae+7vg/w5Cz67UsW5I1IH8Y2i+2PPININa5vtUhYeEPfu1enJw4QBjz3S41D+9F0suDeWVLhs985rzVNAbz1ery3YNM+TL+QiUNIH/caax/ngIVeX0CGbguQ05+JT7qvugXzDecOUxjPXpj/oKZ3Gzs7VrIecIVYIknK/SFLE+VHXE5izYNVRAxO1x57n9ZdLLr+EXs9UxDLRpU8jB6i3IHKJLAh2+FTJ6+y/iKRKyRfwZibfFnYNlqbOSSJu81VcqMZKWKHec8HFDlhRNFO4YbLQlEtXpPNBgtJeH/J9/lWtRe/trkGZ9oz6cXF8Ka31vEBvGUsNpnj9ZHdxeJi89ntetXgcpvSiCaBjebeyAOuTuKiF0twuzJ744Kp5MNQLAgPh1PzcaCCbf0wTZUeyd6f6MeBGu0S2cmkp9Rx5fX4o3HHHd2MGVivP9qaWE/7PRmNwJ/wkFnaqVkgQ3+vYLkzUZ+ve+xxzNZtmY1XxPnxiM5j2GQe9t2hMBq1h0TF53y2XLFAYuhG2W0dnHcGSwquQEfCHePNbzHCxYs1ZCTAX5UlNQaqikzeY3aoS0/TxafivnYbYT/IDxw/sa17YN/FjmfQBXrq4+9bw0R9EU19gFz+pvRVckzTn4DPHXnz+ygAhP6Pe14mDx1zvK8nbYPHNJoCcuSaQp3KdF100FMTz3K4/mpxI/6i5QvYmBKEyHiqJ7H/xcHJyJHo6m/DdFnXWJciiaBpEC8Co9aAcT0pdiMNUPJwnTck8LnpYGbnPlXiBZNDKiWM5uJz+rl2cBTLI5FEVLVhtCoztut1L9KYeSleIS0wRn9vTF/d2ulzlc8Ol5DiQiE6tI0Zp7oMDWWsmdgyRZ2Es5V8C7MyrQMk8QouxuQk2sl5ETx5MwVUKZolNc2ZwWtjkNIl485+4ipyeFS9rTuBrYAAJlytbKMZMMzss/SsM6ld4/sZOZDRHEu1V+mrVEmHqpDKjHe7TlmF4jKb6HExn1aLG1i9GKCuQHxBo3EyaBcFeITEDot6yNqoZi6198aUpES5OLHbNf7YZ7TuAoOZbK0dla8IZ1RCcqDaXfx7jfmE/LyQAUAFXSwCARDAhsfbocH8ev00MFlF0b/8YXs0WUPcQNmZMQycxoh9oegYoD/eLxLMawxn6+Ys3vQH1qjYDVJHmWP3DbHtQVeM2yOky9YL33C5Eb65nw6AiRO1vjbN+qC2wphrnIDoy2uY8g8ApPYwck/P4fL3X7RVmbzEsYSnaIO+QfuzIXNBdrE9EBteon1b4AlXl7wJ/R5V2pSiwEoyxxbH6L19ROEvHrTKuk+WePKh7dfIjdSbxY5uthl8bWxN4rRtOQ82dVVHnEq2HcjDfviUw0Xwglp94i0jCqg68wX335dQBqh7UsR3su243OUxeLkABxE4I872VOS1Uupx4bt5i/PSKN7kHXRtKCaNSCBOEAvbwDF2aQAmGnV4oAxE3gWT77VFraKjvyR+n7xWeQwwczgHCHg48s6o6I3Ji+ar8ZPofyPHo/eh0Tacj7RvzxtfWyYJyTe04Z+82Uq4/1WNyCH4UCo0il2b9m+7F5JARSus0n/lao/haZxl9B8shOUh2z1DPrVw9rqhfgRQhSYEBFQmBjvgtjgIHb4uH2kJPluTU7b63x4h1Ii/L7osnQUmSRtCIcsTtyEGEzkC/oZYi7lDPeBWLga8ItRRdWuBrpMwlPCbnIqarIsDYuk3KaUgzVsFNunFrdvjY0zEgGGRwl0Y7GmydEU5ggUQh2awLp6bJuYWl9HXv5lk6AvgD2O1HNprOQ34WyHMOKWaIQRSmwgiPggiWWx88cRst7lVGafUxDug05OBAFG3hYVIZrCSClK26tay/TW2aWPJ0J+W7w3HxMNhUZItY/aV9XvWXIL22h+MxS+mo2dL3SQGcoia4y1alX+zw4xZIVgnV6Kq1QunXx4GJg4cGyXHnOsMyjv20Da5lz86VVdVnnOa3tZm4uPs6RFi3etRSAcJshnETN0ZAoxPGatlFRAlAdN9D8iS2HnOOGZ73UOXevgMPUPkEMYZSeBgLmiykMvWLn1+jCbAir4Plcj5OaYcK7zEIQLHPyMcZ+k3ZBV1HF8RU4tZpHQ78SrObnA9YKOVJBQyRCK+ANpE9oPoTKcCLBx0e3DW7f5kuNPoAa4RtRxPJlzqakahFJgU53bG7blHEM8jPaZA7FMIQrikec9XcUrp+33/a0IRau0+pv14i16Mi9Y+mvZ2zWCQG6wpsHIN3b4qgSPPxTjvydqbIAP5nwhh3d0Ivrs/rWVvxvBPLjOmYyZrmlZVr9/lvi23sExuD+g4yxlghZE8hByBUa1s/FKgl/H17MpW9YVQxiiL09xGp8otr5QSnD4+P8dzGHxTwLss7A5InmSEP/8pm8IT6qGh6TKBb0wTnTbzZVH8kaehq0GUd2Cyd0GbUWkcPlEsaInV6PFtSLIvPAMnUwykmQ3uBnGmz2JfFTJyJ65NVnnlH/fPPdFJhAoE8ABYLG0woTwdibe9fqM7soOnXMUa4MEqySzIKO8ABJKqspNb6nBUMt9zZbcCNQWvdOhiV44xjYadyqJ19iO1RQz2vw76AbbMycSH3WS0IKQbJ+hXWLtMMQsqPB3HSY+B6E/KZZ/UWRwHOSCUaPzwKdh/AbwwuSR0mFrFkjRyRKApYbOAuUgCTrR1zMijaAFu4yOVGk3r00qfJU7/NWRi7bzNJPQoVqQKsU4vGpKcQFdRw2rvmfPyVhHnPHlPrQRvfHdOUVJ0gWjx3MmO12kmnTkb496rXweLCbl7bl+3k/CT48PE3/dNI0qnhRvnS14LoeaikkCIXvSe17kGyND2A3eoQqCTV7isaSxCxsPZ9j6fg5MFdGktKXBduBdPBYTzqrPYNIcaDnNH1CVGAGfNAUw8nlYIt+cfRDwRQMKtuHH2/n5L/m8Y6uGI9u1i8t0xWLQDfGqH4cLTyB06jXBJEsj5r1pWzcMO+bdD+A6ED9NXCRoMt/9D7wwo3UpjJOoEIMwHPTCK4WeOVoDWINgAA9Q7xvoBvdi7JjLIU0xjKSOB9aAWt67sMCRqmuZQOLF3PBzVT/aPkpKDyvbBkQ2YO4mieQuI3UJR1zT52tWE5iGfZiyp9m4IQOi2mPNuaNpBGRdetTGXGrij/PhUSRrOCkfdv0dRRAoVsFnasRag3V6hCDUG5iNJp8DP2iDQdXb7DVoAImaRMCNfaZBNm9GVtrC4Bl7e9Zeodf9FKw60SXiFKFzaKG4qg0K0vxiT5hX5Gk2yOse7JNCGA8Joqse9EcBjJ6hi2Ai/exnJh5ADpPeDzQm925p5xilKEq4W7U4KDGehxpOTo9d7ubpjTEHtmMIR1iqZUSde5eoBnoiR511vu7+H1VdxixUjjnBx8Z3QFp08a10R9Wfplx3f660chFMWf4DDlVYx9ScRjTIJPs8xJ92MMtSaEnIdMN/TBsWDy2inC0sZ6FGKXiB+0+bEKOp+lMWBTy8V6D7gmdnzmetM5OZ6o7oj6NhoFu8bINrbQVjYQGXiwnrcjETbbY7Dfacaicp4KNohIoLUOjJMwBbyKFksoYWjQPu2ocXwkaMtvTR8KnNYVfL6j+g7Sc+UD0QNmrLMcBcAY4QxllAItoikINSjT5DRUSwQ2Rwc+uWH1RxYOm2vMaowTYHKRVJ1xPYXLZ7EBxFjjZEw3pkC1sYREeUavtngHiivXxWsZU1UJz5TU7Nxrc9hgeqfop79bqfOHjME0CUDV2nAgKX1KJoSQ2y9BaFu+y0fPFk2Gn5RW71w1EVRyNiFnDZnaVzgRhZ0Av/rb/RtuXqpa9n43QOAagxoxCMt+R0AwL4VnxuFGJ9/XjnSYm0Cv4oL7NeZPvVMbNvuwa7RygCzjWf5qiWEN+DmUpOZYgZsAK1E5wFmdPF6qz/Sf/UtxaO0zKNEUHbB2dkyZ5mLczohVLRvBmTfZiafl6By7ntsKekURnaOReKD0pKoFczzjU3jNXuZ599Z/ItXD1sHzcxnnYMeyX2wRSQkTXb0R0D65MW6juSRw3jxNBB3pJkeQ9risHyQrlrWD25KVDADmXWKpV8k27fCeLgRP9GHuRlXEsd9yi8FwQbQGcN23ljSOtMpwQuNhR4NeIjREta+9u1YA7ufhMwk1VuoyEuuVUhvBj1VQbyQ1tJwKzefSoZpwirKWaUO9/Xy5tcDVl8HOhh3eUTxXF+trMQqllcKZrkjY9s1+DWdil+Ox8DXsRPKYPDgqjGbeBqtWLCPlEHJ6+OyD0VeNNcBuPTA2GNAQ+kUx5zAfAbgvYZ3nKuNMku1u2VU1+op6uWTo3Wy32Djo1H1AjXN9RpdSIsJsRnDVZfCHAgUQVtWC1Y/gWinOfo282LqPbZWEk4NsaFPt8yi1zUZ2wByX+MwW68xk3YX16heUp7VLe+0UKbKXFqJKfPrgzuNHYIOJ58/q4EKq/sun+I5l3ANvXhCwiCfIbkexW44h6DFRJAgPkKz7Y09jbAA9d4LWsvZxsWU+LSurj12OSnDQF/CG88NSRYdT/2yiEOwNP9HEtTZSNa6OJjfbnDXP99UoK5QN9GRRunVDKeXoiglhSuGH4TQQ3VbBK3ERX2PXZzZxGaIHTxdQJwuUAAoCkhzeiTqcGZZGIVDRZAl3AC8vJCYmT4sfjo5lvLQsexAG/Sn1wOC2muw1vLlRGituyEoMHZ0oyJaNhT70kMtcK0/qzulvRk+hDyZKnLyl4eRXUZ2avy/nQEmdQ7/jhOP+x9yZkLlJ08Y3r4E++8/DtRLZE6p+vwMLuFODKf+FmfMLnp8KjHFvK6i8enAnMcNMNzkuHUXtdsKPdzNcpi6YwCKQZyphyKHSkdakMZfKOsJL1AVdFQfnQZyAqSebf/oM7SUMlxZD5oDW9Jv8R3p2wgp89pf+wLALu7TaM/W9zpXPg2YNH89ud+lXFV83U3ZzWDs3b3qVwKynzpvRYSK4SD1sVqYUSFB5WCNDOCd+PmNhUwHU0cg8iex2HxsG/Gjd8zurkQeEs4hYpUB2aJ1RYRt5DizYqaxIsLyvRiHaaGcU8oR0kRTI6OKehdrBisEood3kw6H/htDmwM/9Bu/U3PnIzDsVdMqDyofgoRjDklBafzCDBTBsxynPkmlXjLMh5pf1PbL3SkvQPLKTWnyFnX4r9TZLW2UCr6nb8GxPkW4FtV3j9tGMzKSB3oXrpU+xRWV3YytMpzp4lAfvL91mjGRsYuqdFxbXsR0flHoj0ZCFzb8VeowhFkVopXZgR5z6E2+UHl/rG5sZ1Q910NcsVhAp1jKEMi5/PhE3OPSvFvjLiOaCWGX7cNNRmL9vg8x7xYU9f+HEBVfQ9v6jal00y7F+ResACBvqVSsJUy33V04rKLNg0jI6VyOhAEgRkPw45vBj3wIspNLR9xkFMjAPk+bzKRaZCZYmWcKp0S3QyPAgqLR8TVyS6NLZKvhJK/HJkKJd7t4NOLwDQLkvEkxPuauKdExD93gnW10EQ287K8tRs0B2F1OeiEc+n+IqgcoOC/nP4b7sBEmaJNgFj+KQJ+KCCAWBxSHlEG4q5pgU0f7SR9evPMYVKbUZvzXibgUDKKry0uJdX8hkzPJspoEAMNxeHBsXT7ReRGzGAyt9q0WpPaaijMv25c6vVfA+d3F8069FijHs3Ed5hlvdpVUx4uH42L6dbPjKtSk9iC9ZYs2O9eoYLeCO+I+hACJS5H3RcqFQjPaJjznBBEu/O24/oAAAAA" 
+                             alt="Cuñapé"
+                             onerror="this.src='https://placehold.co/600x400/007A33/FFFFFF?text=Cu%C3%B1ap%C3%A9+Cruce%C3%B1o'">
+                        <span class="food-tag">Panadería Típica</span>
+                    </div>
+                    <div class="food-body">
+                        <h3>Cuñapé</h3>
+                        <p>Deliciosos panecillos horneados elaborados con almidón de yuca y queso fresco. Crujientes por fuera y esponjosos por dentro, son el acompañante inseparable de la merienda cruceña.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Curiosidades Interactivas -->
+    <section id="curiosidades" class="section section-light">
+        <div class="container text-center">
+            <div class="section-header">
+                <h2>¿Sabías qué? Curiosidades</h2>
+                <div class="divider"></div>
+                <p>Haz clic en el botón para descubrir cuatro datos fascinantes sobre Santa Cruz de la Sierra.</p>
+            </div>
+
+            <button id="btnCuriosidades" class="btn btn-primary btn-large" aria-expanded="false">
+                Mostrar Curiosidades (4)
+            </button>
+
+            <div id="contenedorCuriosidades" class="curiosidades-grid hidden">
+                <div class="curiosidad-card">
+                    <div class="curiosidad-num">1</div>
+                    <h3>Ciudad de los Anillos</h3>
+                    <p>Su diseño urbano es único en Sudamérica: está organizado en anillos concéntricos rodeados por avenidas radiales que parten desde el casco viejo, facilitando la orientación en toda la ciudad.</p>
+                </div>
+
+                <div class="curiosidad-card">
+                    <div class="curiosidad-num">2</div>
+                    <h3>La Ley del Saludo</h3>
+                    <p>Es conocida mundialmente por la hospitalidad de su gente, al punto de tener la famosa frase en su himno y cultura: <em>"Es ley del cruceño la hospitalidad"</em>.</p>
+                </div>
+
+                <div class="curiosidad-card">
+                    <div class="curiosidad-num">3</div>
+                    <h3>Cuna de los Tajibos</h3>
+                    <p>Durante la primavera (agosto a octubre), sus calles y parques se tiñen de amarillo, rosado y blanco gracias a la floración de los árboles de Tajibo, símbolo natural de la ciudad.</p>
+                </div>
+
+                <div class="curiosidad-card">
+                    <div class="curiosidad-num">4</div>
+                    <h3>Récord de Crecimiento</h3>
+                    <p>Pasó de ser una pequeña ciudad de menos de 50.000 habitantes a mediados del siglo XX a superar los dos millones en su área metropolitana, siendo una de las urbes de mayor crecimiento en Latinoamérica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página con los datos solicitados -->
+    <footer id="contacto" class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Santa Cruz de la Sierra</h3>
+                <p>Proyecto Web Informativo - HTML5, CSS3 y JavaScript</p>
+            </div>
+            <div class="footer-author">
+                <p><strong>Desarrollado por:</strong> Alexander Agapito Urey</p>
+                <p><strong>Celular:</strong> <a href="tel:+59174320070">74320070</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 - Todos los derechos reservados | ¡Viva Santa Cruz!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

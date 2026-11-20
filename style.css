@@ -1,0 +1,560 @@
+/* Variables de Color Oficiales (Verde y Blanco) */
+:root {
+    --verde-oscuro: #005924;
+    --verde-principal: #007A33;
+    --verde-claro: #109B48;
+    --verde-suave: #E8F5EE;
+    --blanco: #FFFFFF;
+    --gris-fondo: #F8FAF9;
+    --texto-oscuro: #1E293B;
+    --texto-gris: #475569;
+    --sombra: 0 10px 25px rgba(0, 122, 51, 0.12);
+    --transicion: all 0.3s ease;
+}
+
+/* Reseteo y Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--texto-oscuro);
+    background-color: var(--blanco);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--verde-oscuro);
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Barra de Navegación */
+.navbar {
+    background-color: var(--verde-principal);
+    color: var(--blanco);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--blanco);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+/* Bandera Cruceña en CSS */
+.flag-icon {
+    display: inline-flex;
+    flex-direction: column;
+    width: 28px;
+    height: 18px;
+    border: 1px solid var(--blanco);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.flag-icon .stripe {
+    flex: 1;
+    width: 100%;
+}
+
+.flag-icon .green {
+    background-color: var(--verde-oscuro);
+}
+
+.flag-icon .white {
+    background-color: var(--blanco);
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+}
+
+.nav-link {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    transition: var(--transicion);
+}
+
+.nav-link:hover {
+    background-color: var(--blanco);
+    color: var(--verde-principal);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: 2px solid var(--blanco);
+    color: var(--blanco);
+    font-size: 1.4rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--blanco);
+    background: linear-gradient(135deg, var(--verde-oscuro) 0%, var(--verde-principal) 55%, var(--verde-claro) 100%);
+    padding: 4rem 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.08) 0%, transparent 50%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--blanco);
+    color: var(--verde-principal);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    margin-bottom: 1.2rem;
+}
+
+.hero h1 {
+    color: var(--blanco);
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 0.85rem 1.8rem;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: var(--transicion);
+}
+
+.btn-primary {
+    background-color: var(--verde-principal);
+    color: var(--blanco);
+    border-color: var(--verde-principal);
+}
+
+.hero .btn-primary {
+    background-color: var(--blanco);
+    color: var(--verde-principal);
+    border-color: var(--blanco);
+}
+
+.hero .btn-primary:hover {
+    background-color: var(--verde-suave);
+    transform: translateY(-2px);
+}
+
+.btn-primary:hover {
+    background-color: var(--verde-oscuro);
+    border-color: var(--verde-oscuro);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 122, 51, 0.25);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--blanco);
+    border-color: var(--blanco);
+}
+
+.btn-outline:hover {
+    background-color: var(--blanco);
+    color: var(--verde-principal);
+    transform: translateY(-2px);
+}
+
+.btn-large {
+    padding: 1rem 2.2rem;
+    font-size: 1.05rem;
+}
+
+/* Secciones Generales */
+.section {
+    padding: 5rem 0;
+}
+
+.section-light {
+    background-color: var(--blanco);
+}
+
+.section-tinted {
+    background-color: var(--verde-suave);
+}
+
+.section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3.5rem auto;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.divider {
+    width: 70px;
+    height: 4px;
+    background-color: var(--verde-principal);
+    margin: 0 auto 1rem auto;
+    border-radius: 2px;
+}
+
+.section-header p {
+    color: var(--texto-gris);
+    font-size: 1.05rem;
+}
+
+/* Reseña Histórica */
+.history-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.history-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.history-text p {
+    margin-bottom: 1rem;
+    color: var(--texto-gris);
+    text-align: justify;
+}
+
+.timeline-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1.8rem;
+}
+
+.t-card {
+    background-color: var(--verde-suave);
+    border-left: 4px solid var(--verde-principal);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.t-card .year {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: var(--verde-principal);
+}
+
+.t-card .event {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--texto-oscuro);
+}
+
+.history-image img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: var(--sombra);
+    border: 4px solid var(--verde-suave);
+}
+
+.img-caption {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--texto-gris);
+    margin-top: 0.6rem;
+    font-style: italic;
+}
+
+/* Comidas Típicas */
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.food-card {
+    background-color: var(--blanco);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--sombra);
+    transition: var(--transicion);
+    border-bottom: 4px solid var(--verde-principal);
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+}
+
+.food-img-wrapper {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.food-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.food-card:hover .food-img-wrapper img {
+    transform: scale(1.06);
+}
+
+.food-tag {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: var(--verde-principal);
+    color: var(--blanco);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+}
+
+.food-body {
+    padding: 1.5rem;
+}
+
+.food-body h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+}
+
+.food-body p {
+    font-size: 0.92rem;
+    color: var(--texto-gris);
+}
+
+/* Curiosidades Interactivas */
+.curiosidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.8rem;
+    margin-top: 3rem;
+    text-align: left;
+    transition: var(--transicion);
+}
+
+.curiosidades-grid.hidden {
+    display: none;
+}
+
+.curiosidad-card {
+    background-color: var(--blanco);
+    border: 2px solid var(--verde-suave);
+    border-top: 5px solid var(--verde-principal);
+    border-radius: 12px;
+    padding: 1.8rem;
+    box-shadow: var(--sombra);
+    animation: fadeInUp 0.4s ease forwards;
+}
+
+.curiosidad-num {
+    width: 38px;
+    height: 38px;
+    background-color: var(--verde-principal);
+    color: var(--blanco);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.curiosidad-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.6rem;
+}
+
+.curiosidad-card p {
+    font-size: 0.92rem;
+    color: var(--texto-gris);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pie de Página */
+.footer {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    padding-top: 3rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-brand h3 {
+    color: var(--blanco);
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.footer-brand p {
+    opacity: 0.85;
+    font-size: 0.95rem;
+}
+
+.footer-author {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--blanco);
+}
+
+.footer-author p {
+    margin: 0.25rem 0;
+    font-size: 0.98rem;
+}
+
+.footer-author a {
+    color: var(--blanco);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1.2rem 0;
+    font-size: 0.88rem;
+    background-color: #00421A;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 850px) {
+    .history-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--verde-oscuro);
+        padding: 1rem 0;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .timeline-cards {
+        grid-template-columns: 1fr;
+    }
+}
